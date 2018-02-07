@@ -1,0 +1,19 @@
+Create table Produto ( ProdutoId int,  Prodnome varchar,  descricao varchar,  preco int)
+  Create table Cliente(  IdCliente int, Cnome  varchar,  email varchar,   telefone bigint)
+    Create table Pedido( NumPedido int,  Id_Produto int,  Id_Cliente int)
+
+Insert into  Produto(ProdutoId, Prodnome, descricao,preco) values (2, 'Revista', 'Superinteressante', 29.99)
+  Insert into  Cliente ( IdCliente, Cnome, email,  telefone) values (1, 'Fulano', 'cliente@domínio.com',11912345678)
+    Insert into  Pedido(NumPedido, Id_Produto, Id_Cliente) values(3, 2, 1)
+
+Select* from  Produto;
+  Select* from  Cliente;
+    Select* from  Pedido;
+
+Update  Cliente set Cnome ='ciclano' where IdCliente=1
+  Update Produto set Prodnome ='Jornal' where ProdutoId=2
+    Update  Pedido set NumPedido=99 where NumPedido=1
+
+Delete from  Pedido where NumPedido=99
+  Delete from  Cliente where IdCliente =1
+    Delete from  Produto where ProdutoId=2
